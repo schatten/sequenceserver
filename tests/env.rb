@@ -39,7 +39,8 @@ module SequenceServer
 
       def gem_installed?
         # FIXME: must check version (local system may have outdated gem installed)
-        system('sequenceserver -h > /dev/null 2> /dev/null')
+        installed = `sequenceserver -v`
+        installed and installed > SequenceServer::VERSION
       end
 
       def install_gem
