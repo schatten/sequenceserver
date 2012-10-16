@@ -22,11 +22,7 @@
   <script type="text/javascript" src="<%= uri('/js/sequenceserver.blast.js') %>"></script>
 
   <%# without a space after erb's closing tag, a / gets appended to css' path %>
-  <link rel="stylesheet" media="screen" type="text/css" href="<%= uri('/css/bootstrap.min.css') %>" />
-  <link rel="stylesheet" media="screen" type="text/css" href="<%= uri('/css/bootstrap.dropdown.css') %>" />
-  <link rel="stylesheet" media="screen" type="text/css" href="<%= uri('/css/bootstrap.modal.css') %>" />
-  <link rel="stylesheet" media="screen" type="text/css" href="<%= uri('/css/bootstrap.icons.css') %>" />
-  <link rel="stylesheet" media="screen" type="text/css" href="<%= uri('/css/custom.css') %>" />
+  <link rel="stylesheet" media="screen" type="text/css" href="<%= uri('/css/bootstrap.custom.css') %>" />
 </head>
 
 <body>
@@ -48,7 +44,7 @@
 
       <form method="post" id="blast" action="<%= uri('/#result') %>">
         <div class="row">
-          <div class="span16">
+          <div class="span12">
             <div class="control-group">
               <textarea name="sequence" id="sequence" spellcheck="false" autofocus="true" placeholder="Paste your sequence(s) here..." ></textarea>
             </div>
@@ -72,7 +68,7 @@
         <br class="large"/>
 
         <div class="row">
-          <div class="span8">
+          <div class="span6">
             <div class="offset-left box databases nucleotide">
               <div class="clearfix">
                 <fieldset>
@@ -90,7 +86,7 @@
             </div>
           </div>
 
-          <div class="span8">
+          <div class="span6">
             <div class="offset-right box databases protein">
               <div class="clearfix">
                 <fieldset>
@@ -112,12 +108,14 @@
         <br class="large"/>
 
         <div class="row">
-          <div class="span12">
+          <div class="span9">
             <div class="offset-left box advanced">
               <div class="clearfix">
-                <label for="advanced">Advanced Parameters:</label>
-                <input class="span8" type="text" name="advanced" id="advanced" title="View, and enter advanced parameters." placeholder="eg: -evalue 1.0e-5 -num_alignments 100"/>
-                <span class="icon-question-sign" data-toggle="modal" href="#help"></span>
+                <label for="advanced">Advanced Parameters:</label></br>
+                <div class="input-append">
+                  <input class="" type="text" name="advanced" id="advanced" title="View, and enter advanced parameters." placeholder="eg: -evalue 1.0e-5 -num_alignments 100"/>
+                  <span class="add-on" data-toggle="modal" href="#help"><i class=" icon-question-sign"></i></span>
+                </div>
               </div>
 
               <div class="modal hide fade" id="help">
@@ -134,7 +132,7 @@
             </div>
           </div>
 
-          <div class="span4">
+          <div class="span3">
             <div id="methods">
               <button type="submit" class="span3 btn btn-large btn-primary" id="method" disabled="disabled">blast</button>
               <button class="btn btn-primary btn-large dropdown-toggle hide" data-toggle="dropdown">
