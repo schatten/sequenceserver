@@ -5,3 +5,6 @@ Gemfile.lock
 .rbx
 config.yml
 tmp
+# built files
+public/css/bootstrap.custom.css
+public/bootstrap/bootstrap
