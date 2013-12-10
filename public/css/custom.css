@@ -1,5 +1,6 @@
 html, body{
   height: 100%;
+  margin: 0;
 }
 
 pre {
@@ -31,8 +32,6 @@ br.large {
 
 .box {
   background: #D5E1DD;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
 }
 
 fieldset legend {
@@ -48,14 +47,12 @@ body {
 }
 
 .page {
-  border-radius: 6px 6px 6px 6px;
-  margin: 50px 0px;
+  margin: 0px;
 }
 
 #banner {
   background: #EBCD7B;
   padding: 2%;
-  border-radius: 6px 6px 0px 0px;
   text-align: center;
 }
 
@@ -67,12 +64,9 @@ body {
 }
 
 .detached-top {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
 }
 
 .detached-bottom {
-  border-radius: 0px 0px 6px 6px;
 }
 
 #sequence {
@@ -91,9 +85,6 @@ body {
 .notification {
   margin: 0 auto;
   z-index: 1050;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
@@ -177,15 +168,11 @@ span.highlight {
 #result {
   padding: 20px;
   background-color: white;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
 }
 
 .resultn {
   background-color: #dfefe6;
   margin: 18px 0px 18px 0px;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
   padding: 3%;
   border: 1px solid transparent;
 }
@@ -197,8 +184,6 @@ div.focussed {
 #underbar {
   background: #EBCD7B;
   padding: 1%;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
   text-align: center;
 }
 
