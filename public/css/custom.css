@@ -192,7 +192,14 @@ div.focussed {
 #underbar {
   background: #EBCD7B;
   padding: 1%;
-  text-align: center;
+}
+
+#underbar .underbar-link {
+  color: #33539C;
+}
+
+#underbar .underbar-link:hover {
+  color: #253C73;
 }
 
 #spinner {
