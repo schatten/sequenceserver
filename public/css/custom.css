@@ -50,10 +50,17 @@ body {
   margin: 0px;
 }
 
-#banner {
+#banner div {
   background: #EBCD7B;
-  padding: 2%;
-  text-align: center;
+}
+
+#banner h1.brand {
+  font-weight: 300;
+  padding: 0.5em;
+}
+
+#banner h1.brand span {
+  color: #2B3E42;
 }
 
 #blast {
